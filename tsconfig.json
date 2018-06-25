@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "lib": [
+      "dom",
+      "es2015"
+    ],
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "strictNullChecks": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "declaration": true,
+    "strict": false,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "suppressImplicitAnyIndexErrors": true
+  },
+  "include": [
+    "src/**/*.ts"
+  ],
+  "compileOnSave": false
+}
