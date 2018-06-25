@@ -24,6 +24,8 @@
 
 <script lang="ts">
 import card from '@/components/card'
+//import { wx } from "../../@types/wx";
+import wx from '@/@types/wx'
 
 export default {
   data () {
