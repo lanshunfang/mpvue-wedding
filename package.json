@@ -1,7 +1,7 @@
 {
-  "name": "mpvue-wedding-2",
+  "name": "mpvue-wedding",
   "version": "1.0.0",
-  "description": "A Mpvue project",
+  "description": "Paul and Carissa's wedding wechat mini-program, over Mpvue project",
   "author": "Paul Lan <lanshunfang@gmail.com>",
   "private": true,
   "scripts": {

@@ -1,5 +1,5 @@
 {
-	"description": "项目配置文件。",
+	"description": "Paul & Carissa's Wedding Mini-Program",
 	"setting": {
 		"urlCheck": true,
 		"es6": false,
@@ -10,7 +10,7 @@
 	"miniprogramRoot": "./dist/",
 	"compileType": "miniprogram",
 	"appid": "touristappid",
-	"projectname": "mpvue-wedding-2",
+	"projectname": "mpvue-wedding",
 	"condition": {
 		"search": {
 			"current": -1,

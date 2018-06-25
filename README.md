@@ -1,12 +1,28 @@
-# mpvue-wedding-2
+# Paul & Carissa's Wedding Wechat Miniprogram
 
-> A Mpvue project
+> Powered by Mpvue project
+> Add TypeScript support
+
+# QR
+
+![Mini Program QR](./src/static/mini-program-qr.jpg)
+
+## Init
+
+``` bash
+# TSC Suppport
+npm install typescript -g
+
+# Config sample
+mv project.config.sample.json project.config.json
+
+# install dependencies
+npm install
+```
 
 ## Build Setup
 
 ``` bash
-# install dependencies
-npm install
 
 # serve with hot reload at localhost:8080
 npm run dev
@@ -17,5 +33,11 @@ npm run build
 # build for production and view the bundle analyzer report
 npm run build --report
 ```
+
+## License
+> MIT
+
+## Author
+> Paul Shunfang Lan <lanshunfang#gmail.com>
 
 For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
