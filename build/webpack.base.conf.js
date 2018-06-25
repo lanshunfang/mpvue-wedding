@@ -68,16 +68,6 @@ module.exports = {
         ]
       },
       {
-        test: /\.tsx?$/,
-        include: [resolve('src'), resolve('test')],
-
-        loader: 'ts-loader',
-        exclude: /node_modules/,
-        options: {
-          appendTsSuffixTo: [/\.vue$/],
-        }
-      },
-      {
         test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
         loader: 'url-loader',
         options: {

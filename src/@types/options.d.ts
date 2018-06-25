@@ -1,17 +1,17 @@
-import { VueD, CreateElement } from "./vue";
+import { Vue, CreateElement } from "./vue";
 import { VNode, VNodeData, VNodeDirective } from "./vnode";
 
 type Constructor = {
   new (...args: any[]): any;
 }
 
-export type Component = typeof VueD | ComponentOptions<VueD> | FunctionalComponentOptions;
+export type Component = typeof Vue | ComponentOptions<Vue> | FunctionalComponentOptions;
 export type AsyncComponent = (
   resolve: (component: Component) => void,
   reject: (reason?: any) => void
 ) => Promise<Component> | Component | void;
 
-export interface ComponentOptions<V extends VueD> {
+export interface ComponentOptions<V extends Vue> {
   data?: Object | ((this: V) => Object);
   props?: string[] | { [key: string]: PropOptions | Constructor | Constructor[] };
   propsData?: Object;
@@ -49,10 +49,10 @@ export interface ComponentOptions<V extends VueD> {
     event?: string;
   };
 
-  parent?: VueD;
-  mixins?: (ComponentOptions<VueD> | typeof VueD)[];
+  parent?: Vue;
+  mixins?: (ComponentOptions<Vue> | typeof Vue)[];
   name?: string;
-  extends?: ComponentOptions<VueD> | typeof VueD;
+  extends?: ComponentOptions<Vue> | typeof Vue;
   delimiters?: [string, string];
   comments?: boolean;
   inheritAttrs?: boolean;
@@ -70,7 +70,7 @@ export interface RenderContext {
   children: VNode[];
   slots(): any;
   data: VNodeData;
-  parent: VueD;
+  parent: Vue;
   injections: any
 }
 

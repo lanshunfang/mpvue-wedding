@@ -32,6 +32,6 @@ declare namespace Vue {
 }
 
 // TS cannot merge imported class with namespace, declare a subclass to bypass
-declare class Vue extends V.VueD {}
+declare class Vue extends V.Vue {}
 
 export = Vue;
