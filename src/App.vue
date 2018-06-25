@@ -13,7 +13,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
 .container {
   height: 100%;
   display: flex;
@@ -22,6 +22,7 @@ export default {
   justify-content: space-between;
   padding: 200rpx 0;
   box-sizing: border-box;
+  font-size: 25rpx;
 }
 /* this rule will be remove */
 * {

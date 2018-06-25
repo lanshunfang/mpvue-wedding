@@ -32,7 +32,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
 .log-list {
   display: flex;
   flex-direction: column;

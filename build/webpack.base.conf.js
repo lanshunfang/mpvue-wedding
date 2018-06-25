@@ -49,15 +49,10 @@ module.exports = {
   },
   module: {
     rules: [
-      //{
-      //  test: /\.ts$/,
-      //  loader: 'ts-loader',
-      //  options: { appendTsSuffixTo: [/\.vue$/] }
-      //},
 
       {
         test: /\.tsx?$/,
-        // include: [resolve('src'), resolve('test')],
+        include: [resolve('src'), resolve('test')],
         exclude: /node_modules/,
         use: [
           'babel-loader',
