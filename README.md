@@ -13,8 +13,12 @@
 # TSC Suppport
 npm install typescript -g
 
+## WeCos support @ https://github.com/tencentyun/wecos
+npm install -g wecos
+
 # Config sample
 mv project.config.sample.json project.config.json
+mv wecos.config.sample.json wecos.config.json
 
 # install dependencies
 npm install

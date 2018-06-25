@@ -14,3 +14,4 @@ yarn-error.log*
 
 # Should not commit it as it will include App Id
 project.config.json
+wecos.config.json
