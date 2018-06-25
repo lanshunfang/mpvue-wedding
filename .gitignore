@@ -18,3 +18,4 @@ wecos.config.json
 
 # Ignore sourcemap
 *.js.map
+**/*.js.map

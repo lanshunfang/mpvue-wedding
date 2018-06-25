@@ -20,8 +20,8 @@ function getEntry (rootSrc, pattern) {
   }, {})
 }
 
-const appEntry = { app: resolve('./src/main.js') }
-const pagesEntry = getEntry(resolve('./src'), 'pages/**/main.js')
+const appEntry = { app: resolve('./src/main.ts') }
+const pagesEntry = getEntry(resolve('./src'), 'pages/**/main.ts')
 const entry = Object.assign({}, appEntry, pagesEntry)
 
 module.exports = {
@@ -38,7 +38,7 @@ module.exports = {
       : config.dev.assetsPublicPath
   },
   resolve: {
-    extensions: ['.js', '.vue', '.json'],
+    extensions: ['.ts', '.js', '.vue', '.json'],
     alias: {
       'vue': 'mpvue',
       '@': resolve('src')
@@ -49,6 +49,33 @@ module.exports = {
   },
   module: {
     rules: [
+      //{
+      //  test: /\.ts$/,
+      //  loader: 'ts-loader',
+      //  options: { appendTsSuffixTo: [/\.vue$/] }
+      //},
+
+      {
+        test: /\.tsx?$/,
+        // include: [resolve('src'), resolve('test')],
+        exclude: /node_modules/,
+        use: [
+          'babel-loader',
+          {
+            loader: 'mpvue-loader',
+            options: {
+              checkMPEntry: true
+            }
+          },
+          {
+             loader: 'ts-loader',
+            //loader: 'awesome-typescript-loader',
+            options: {
+              appendTsSuffixTo: [/\.vue$/],
+            }
+          }
+        ]
+      },
       {
         test: /\.vue$/,
         loader: 'mpvue-loader',

@@ -8,9 +8,11 @@
   </div>
 </template>
 
-<script>
-import { formatTime } from '@/utils/index'
-import card from '@/components/card'
+<script lang="ts">
+import { formatTime } from '../../utils/index'
+import card from '../../components/card.vue'
+import {wx} from '../../@types/wx'
+
 
 export default {
   components: {

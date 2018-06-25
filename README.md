@@ -5,7 +5,7 @@
 
 # QR
 
-![Mini Program QR](./src/static/mini-program-qr.jpg)
+![Mini Program QR](./static/mini-program-qr.jpg)
 
 ## Init
 

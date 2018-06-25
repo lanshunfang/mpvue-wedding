@@ -23,9 +23,10 @@
 </template>
 
 <script lang="ts">
-import card from '@/components/card'
+
+import card from '../../components/card.vue'
 //import { wx } from "../../@types/wx";
-import wx from '@/@types/wx'
+import {wx} from '../../@types/wx'
 
 export default {
   data () {
