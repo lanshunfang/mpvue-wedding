@@ -5,9 +5,9 @@
   "author": "Paul Lan <lanshunfang@gmail.com>",
   "private": true,
   "scripts": {
-    "dev": "tsc -p tsconfig.json --watch true; node build/dev-server.js",
+    "dev": "tsc -p tsconfig.json --watch true --sourceMap true; node build/dev-server.js",
     "start": "npm run dev",
-    "build": "tsc -p tsconfig.json --watch false; node build/build.js"
+    "build": "tsc -p tsconfig.json --watch false --sourceMap false; node build/build.js"
   },
   "dependencies": {
     "mpvue": "^1.0.11",
